@@ -1,51 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Notifications page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
 
-  Notifications 3
+    <title>Frontend Mentor | Notifications page</title>
 
-  Mark all as read
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="home rounded-xl bg-white p-2 md:p-4 lg:p-6 h-screen">
+      <h1 class="mb-6">
+        <span class="font-extrabold text-xl">Notifications</span>
+        <span class="three text-white px-3 py-1 rounded-md font-bold">3</span>
+      </h1>
 
-  Angela Gray followed you
-  5m ago
+      <div class="grid grid-rows-7 grid-flow-row gap-2">
+        <!-- one -->
+        <div class="not-1 rounded-md px-4 py-4">
+          <div class="flex">
+            <img
+              class="img-fluid h-10 mr-3"
+              src="./assets/images/avatar-mark-webber.webp"
+            />
+            <p class="mb-4">
+              <span class="font-bold">Mark Webber</span>
+              <span class="mr-1 font-light">reacted to your recent post</span>
+              <span class="font-bold">My first tournament today!</span>
+              <span class="w-8 -red-500 rounded-full">.</span>
+            </p>
+          </div>
+          <p class="px-12 font-light">1min ago</p>
+        </div>
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
+        <!-- two -->
+        <div class="not-1 rounded-md px-4 py-4">
+          <div class="flex">
+            <img
+              class="img-fluid h-10 mr-3"
+              src="./assets/images/avatar-angela-gray.webp"
+            />
+            <p class="mb-4">
+              <span class="font-bold">Angela Gray</span>
+              <span class="mr-1 font-light">followed you</span>
+              <span class="text-red-500">.</span>
+            </p>
+          </div>
+          <p class="px-12 font-light">5m ago</p>
+        </div>
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
+        <!-- three -->
+        <div class="not-1 rounded-md px-4 py-4">
+          <div class="flex">
+            <img
+              class="img-fluid h-10 mr-3"
+              src="./assets/images/avatar-jacob-thompson.webp"
+            />
+            <p class="mb-4">
+              <span class="font-bold">Jacob Thompson</span>
+              <span class="mr-1 font-light">has joined your group</span>
+              <span class="font-bold">Chess Club</span>
+              <span class="text-red-500">.</span>
+            </p>
+          </div>
+          <p class="px-12 font-light">1 day ago</p>
+        </div>
 
-  Kimberly Smith commented on your picture
-  1 week ago
+        <!-- four -->
+        <div class="not-1 rounded-md px-4 py-4">
+          <div class="flex">
+            <img
+              class="img-fluid h-10 mr-3"
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+            />
+            <p class="mb-4">
+              <span class="font-bold">Rizky Hasanuddin</span>
+              <span class="mr-1 font-light">sent you a private message</span>
+              <!-- !!!!!!!!!!!!!!!!!MISSING CONTENT HERE!!!!!!!!!!!! -->
+            </p>
+          </div>
+          <p class="px-12 font-light">5 days ago</p>
+        </div>
 
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
+        <!-- five -->
+        <div class="not-1 rounded-md px-4 py-4">
+          <div class="flex">
+            <img
+              class="img-fluid h-10 mr-3"
+              src="./assets/images/avatar-kimberly-smith.webp"
+            />
+            <p class="mb-4">
+              <span class="font-bold">Kimberly Smith</span>
+            </p>
+          </div>
+          <p class="px-12 font-light">1 week ago</p>
+        </div>
 
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <!-- six -->
+        <div class="not-1 rounded-md px-4 py-4">
+          <div class="flex">
+            <img
+              class="img-fluid h-10 mr-3"
+              src="./assets/images/avatar-nathan-peterson.webp"
+            />
+            <p class="mb-4">
+              <span class="font-bold">Nathan Peterson</span>
+              <span class="mr-1 font-light">reacted to your recent post</span>
+              <span class="font-bold"
+                >5 end-game strategies to increase your win rate</span
+              >
+            </p>
+          </div>
+          <p class="px-12 font-light">2 weeks ago</p>
+        </div>
+
+        <!-- seven -->
+        <div class="not-1 rounded-md px-4 py-2">
+          <div class="flex">
+            <img
+              class="img-fluid h-10 mr-3"
+              src="./assets/images/avatar-anna-kim.webp"
+            />
+            <p class="mb-4">
+              <span class="font-bold">Anna Kim</span>
+              <span class="mr-1 font-light">left the group</span>
+              <span class="font-bold">Chess Club</span>
+            </p>
+          </div>
+          <p class="px-12 font-light">2 weeks ago</p>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="http://github.com/SusanGithaigaN">Your Name Here</a>.
+    </div>
+  </body>
 </html>

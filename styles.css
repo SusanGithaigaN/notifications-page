@@ -1,0 +1,26 @@
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: hsl(210, 60%, 98%);
+    height: fit-content !important;
+}
+
+.home {
+    background-color: hsl(0, 0%, 100%);
+    /* height: fit-content !important; */
+}
+
+.three {
+    background-color: hsl(224, 21%, 14%);
+}
+
+.not-1 {
+    background-color: hsl(211, 68%, 94%);
+}
+
+p {
+    font-size: 16px;
+}
