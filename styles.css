@@ -10,17 +10,57 @@ body {
 
 .home {
     background-color: hsl(0, 0%, 100%);
-    /* height: fit-content !important; */
 }
 
 .three {
-    background-color: hsl(224, 21%, 14%);
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(219, 85%, 26%);
 }
 
 .not-1 {
     background-color: hsl(211, 68%, 94%);
+    /* box-sizing: content-box; */
 }
 
 p {
     font-size: 16px;
+    /* line-height: 1; */
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50%;
+    display: inline-block;
+    /* line-height: 1; */
+}
+
+.blue {
+    color: hsl(219, 85%, 26%);
+}
+
+.hello {
+    border-color: ;
+}
+
+
+/* responsiveness */
+@media screen and (max-width: 736px) {
+    body {
+        transform: none !important;
+        top: auto;
+        left: auto;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+
+    p span {
+        margin-bottom: 0;
+    }
+
+    .not-1 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }

@@ -30,101 +30,129 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="home rounded-xl bg-white p-2 md:p-4 lg:p-6 h-screen">
-      <h1 class="mb-6">
-        <span class="font-extrabold text-xl">Notifications</span>
-        <span class="three text-white px-3 py-1 rounded-md font-bold">3</span>
-      </h1>
+    <div class="home rounded-xl bg-white p-2 md:p-4 lg:p-4 mt-4 md:mt-4 lg:mt-8 h-screen">
+      <div class="grid grid-cols-4">
+        <div class="col-span-3">
+          <h1 class="mb-6">
+            <span class="font-extrabold text-xl">Notifications</span>
+            <span class="three text-white px-3 py-1 rounded-md font-bold"
+              >3</span
+            >
+          </h1>
+        </div>
+        <div class="col-span-1 text-right">Mark all as read</div>
+      </div>
 
-      <div class="grid grid-rows-7 grid-flow-row gap-2">
+      <div class="grid grid-rows-7 grid-flow-row gap-0">
         <!-- one -->
-        <div class="not-1 rounded-md px-4 py-4">
+        <div class="not-1 rounded-md px-4 py-4 h-32">
           <div class="flex">
             <img
               class="img-fluid h-10 mr-3"
               src="./assets/images/avatar-mark-webber.webp"
             />
-            <p class="mb-4">
+            <p>
               <span class="font-bold">Mark Webber</span>
               <span class="mr-1 font-light">reacted to your recent post</span>
               <span class="font-bold">My first tournament today!</span>
-              <span class="w-8 -red-500 rounded-full">.</span>
+              <span class="dot"></span>
             </p>
           </div>
           <p class="px-12 font-light">1min ago</p>
         </div>
 
         <!-- two -->
-        <div class="not-1 rounded-md px-4 py-4">
+        <div class="not-1 rounded-md px-4 py-4 h-32">
           <div class="flex">
             <img
               class="img-fluid h-10 mr-3"
               src="./assets/images/avatar-angela-gray.webp"
             />
-            <p class="mb-4">
+            <p>
               <span class="font-bold">Angela Gray</span>
               <span class="mr-1 font-light">followed you</span>
-              <span class="text-red-500">.</span>
+              <span class="dot"></span>
             </p>
           </div>
           <p class="px-12 font-light">5m ago</p>
         </div>
 
         <!-- three -->
-        <div class="not-1 rounded-md px-4 py-4">
+        <div class="not-1 rounded-md px-4 py-4 h-32">
           <div class="flex">
             <img
               class="img-fluid h-10 mr-3"
               src="./assets/images/avatar-jacob-thompson.webp"
             />
-            <p class="mb-4">
+            <p>
               <span class="font-bold">Jacob Thompson</span>
               <span class="mr-1 font-light">has joined your group</span>
-              <span class="font-bold">Chess Club</span>
-              <span class="text-red-500">.</span>
+              <span class="blue font-bold">Chess Club</span>
+              <span class="dot"></span>
             </p>
           </div>
           <p class="px-12 font-light">1 day ago</p>
         </div>
 
         <!-- four -->
-        <div class="not-1 rounded-md px-4 py-4">
+        <div class="not-2 px-4 py-4">
           <div class="flex">
             <img
               class="img-fluid h-10 mr-3"
               src="./assets/images/avatar-rizky-hasanuddin.webp"
             />
-            <p class="mb-4">
+            <p>
               <span class="font-bold">Rizky Hasanuddin</span>
               <span class="mr-1 font-light">sent you a private message</span>
               <!-- !!!!!!!!!!!!!!!!!MISSING CONTENT HERE!!!!!!!!!!!! -->
             </p>
           </div>
-          <p class="px-12 font-light">5 days ago</p>
+          <p class="px-12 font-light pb-4">5 days ago</p>
+
+          <div
+            class="ml-2 md:ml-4 lg:ml-16 border border-gray-300 drop-shadow-lg"
+          >
+            <p class="p-4">
+              Hello, thanks for setting up the Chess Club. I've been a ember for
+              a few weeks now and I'm already having lots of fun and improving
+              my game.
+            </p>
+          </div>
         </div>
 
         <!-- five -->
-        <div class="not-1 rounded-md px-4 py-4">
+        <div class="not-1 rounded-md px-4 py-4 h-32">
           <div class="flex">
             <img
               class="img-fluid h-10 mr-3"
               src="./assets/images/avatar-kimberly-smith.webp"
             />
-            <p class="mb-4">
-              <span class="font-bold">Kimberly Smith</span>
-            </p>
+            <div class="grid grid-cols-4 flex-grow">
+              <div class="col-span-3">
+                <p>
+                  <span class="font-bold">Kimberly Smith</span>
+                </p>
+              </div>
+              <div class="col-span-1 flex justify-end items-center">
+                <img
+                  class="img-fluid h-10"
+                  src="./assets/images/image-chess.webp"
+                />
+              </div>
+            </div>
           </div>
+
           <p class="px-12 font-light">1 week ago</p>
         </div>
 
         <!-- six -->
-        <div class="not-1 rounded-md px-4 py-4">
+        <div class="not-1 rounded-md px-4 py-4 h-32">
           <div class="flex">
             <img
               class="img-fluid h-10 mr-3"
               src="./assets/images/avatar-nathan-peterson.webp"
             />
-            <p class="mb-4">
+            <p>
               <span class="font-bold">Nathan Peterson</span>
               <span class="mr-1 font-light">reacted to your recent post</span>
               <span class="font-bold"
@@ -136,27 +164,29 @@
         </div>
 
         <!-- seven -->
-        <div class="not-1 rounded-md px-4 py-2">
+        <div class="not-1 rounded-md px-4 py-4 h-32">
           <div class="flex">
             <img
               class="img-fluid h-10 mr-3"
               src="./assets/images/avatar-anna-kim.webp"
             />
-            <p class="mb-4">
+            <p>
               <span class="font-bold">Anna Kim</span>
               <span class="mr-1 font-light">left the group</span>
-              <span class="font-bold">Chess Club</span>
+              <span class="blue font-bold">Chess Club</span>
             </p>
           </div>
           <p class="px-12 font-light">2 weeks ago</p>
         </div>
       </div>
-    </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="http://github.com/SusanGithaigaN">Your Name Here</a>.
+
+      <div class="attribution py-2">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="http://github.com/SusanGithaigaN">Susan Githaiga</a>.
+      </div>
     </div>
   </body>
 </html>
